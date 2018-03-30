@@ -1,0 +1,149 @@
+.uk-navbar-container {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uk-sticky-fixed nav {
+  margin-top: 2em;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#bio {
+  background-image: url("img/bg/golden_gate.jpeg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#portrait-pic {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+#experience {
+  background-color: #4C373C;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.float-bottom {
+  bottom: 4em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.Iam {
+  padding: 2em 5em;
+  font: normal 60px/70px Helvetica, sans-serif;
+  color: #fff;
+}
+.Iam p {
+  height: 70px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 70px;
+  top: 0px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #DB5A42;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 8s;
+   -moz-animation:move 8s;
+    -ms-animation:move 8s;
+     -o-animation:move 8s;
+        animation:move 8s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+     -o-animation-delay:1s;
+        animation-delay:1s;
+
+        animation-timing-function: ease;
+}
+@keyframes move{
+0%  { top: 0px; }
+5% { top: 0px; }
+20% { top: -70px; }
+25% { top: -70; }
+40% { top: -140px; }
+45% { top: -140px; }
+60% { top: -210px; }
+65% { top: -210px; }
+80% { top: -280px; }
+85% { top: -280px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    5% { top: 0px; }
+    20% { top: -70px; }
+    25% { top: -70; }
+    40% { top: -140px; }
+    45% { top: -140px; }
+    60% { top: -210px; }
+    65% { top: -210px; }
+    80% { top: -280px; }
+    85% { top: -280px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    5% { top: 0px; }
+    20% { top: -70px; }
+    25% { top: -70; }
+    40% { top: -140px; }
+    45% { top: -140px; }
+    60% { top: -210px; }
+    65% { top: -210px; }
+    80% { top: -280px; }
+    85% { top: -280px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    5% { top: 0px; }
+    20% { top: -70px; }
+    25% { top: -70; }
+    40% { top: -140px; }
+    45% { top: -140px; }
+    60% { top: -210px; }
+    65% { top: -210px; }
+    80% { top: -280px; }
+    85% { top: -280px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    5% { top: 0px; }
+    20% { top: -70px; }
+    25% { top: -70; }
+    40% { top: -140px; }
+    45% { top: -140px; }
+    60% { top: -210px; }
+    65% { top: -210px; }
+    80% { top: -280px; }
+    85% { top: -280px; }
+}
