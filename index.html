@@ -3,31 +3,38 @@
   <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" />
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 
   <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+
+  <!-- clipboard.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="index.js"></script>
   </head>
 
 <body>
-  <div id="bio">
+  <div id="bio" class="uk-container-expand" uk-parallax="bgy: -200">
     <br>
     <br>
-    <div uk-sticky="cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-      <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+    <div class="uk-visible@s" uk-sticky="cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+      <nav class="uk-navbar-container uk-animation-slide-top" uk-navbar style="position: relative; z-index: 980;">
           <div class="uk-navbar-center">
-              <ul class="uk-navbar-nav">
+              <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
                   <li><a href="#bio">Bio</a></li>
-                  <li><a href="#">Experience</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Interests</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#interests">Interests</a></li>
               </ul>
 
           </div>
       </nav>
     </div>
-    <div class="Iam">
+    <div class="Iam uk-visible@s uk-animation-slide-left">
       <p>Hi I'm</p>
       <b>
         <div class="innerIam">
@@ -39,24 +46,78 @@
           </div>
       </b>
       </div>
-      <div class="uk-flex uk-flex-center uk-flex-middle uk-margin-large-top">
-        <img class="uk-margin-medium-right" id="portrait-pic" src="img/portrait.png">
-        <ul class="uk-width-1-5 uk-list text-white">
-          <li>Hi! I'm a student at Stanford majoring in Symbolic Systems, concentrating in Artificial Intelligence.</li>
-          <li>Contact: camcruz@stanford.edu</li>
-          <li><a href="https://www.linkedin.com/in/cameroncruz/">LinkedIn</a></li>
-        </ul>
+      <div class="uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-hidden@s uk-margin-xlarge-top">
+        <div>
+          <img class="uk-animation-slide-left" id="portrait-pic" src="img/portrait.png">
+        </div>
+        <div class="uk-width-2-3 uk-text-center uk-margin-medium-top">
+          <ul class="uk-list text-white uk-animation-slide-right">
+            <li>Hi! I'm a student at <em>Stanford</em> majoring in Symbolic Systems, concentrating in <em>Artificial Intelligence</em>. I'm all about user-centered design and shipping the <em>right</em> software.</li>
+            <li>Contact: <span uk-tooltip="title: Copy to clipboard; pos: top-right" class="text-rust cpy-clipboard" data-clipboard-text="camcruz@stanford.edu">camcruz@stanford.edu&nbsp;<span uk-icon="icon: copy;"></span></span></li>
+            <li><a href="https://www.linkedin.com/in/cameroncruz/" class="text-white"><span uk-icon="icon: link;"></span>&nbsp;LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="uk-visible@s uk-grid-large uk-child-width-1-4@s uk-flex-center uk-margin-large-top" uk-grid>
+        <div>
+          <img class="uk-animation-slide-left uk-float-right" id="portrait-pic" src="img/portrait.png">
+        </div>
+        <div>
+          <ul class="uk-list text-white uk-animation-slide-right">
+            <li>Hi! I'm a student at <em>Stanford</em> majoring in Symbolic Systems, concentrating in <em>Artificial Intelligence</em>. I'm all about user-centered design and shipping the <em>right</em> software.</li>
+            <li>Contact: <span uk-tooltip="title: Copy to clipboard; pos: top-right" class="text-rust cpy-clipboard" data-clipboard-text="camcruz@stanford.edu">camcruz@stanford.edu&nbsp;<span uk-icon="icon: copy;"></span></span></li>
+            <li><a href="https://www.linkedin.com/in/cameroncruz/" class="text-white"><span uk-icon="icon: link;"></span>&nbsp;LinkedIn</a></li>
+          </ul>
+        </div>
     </div>
-    <div class="float-bottom">
-      <div class="uk-flex uk-flex-center">
-        <span class="text-white" uk-icon="icon: chevron-down; ratio: 3"></span>
+    <div id="arrow-bottom" class="uk-animation-slide-bottom">
+      <span class="text-white" uk-icon="icon: chevron-down; ratio: 3"></span>
+    </div>
+  </div>
+  <div id="experience" class="uk-container-expand">
+    <br>
+    <h1 class="uk-heading-primary text-white uk-text-center uk-margin-large-bottom">EXPERIENCE</h1>
+    <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+      <div>
+        <h3 class="uk-heading-bullet text-white uk-text-center">Software Engineering Intern</h3>
+        <div class="uk-container">
+          <p class="text-white uk-text-lead">GraphPad Software</p>
+          <p class="text-white uk-text-meta">Summer 2016, Summer 2017</p>
+          <ul class="uk-list uk-list-bullet">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3 class="uk-heading-bullet text-white uk-text-center">NLP Researcher</h3>
+        <div class="uk-container">
+          <p class="text-white uk-text-lead">Stanford University</p>
+          <p class="text-white uk-text-meta">Summer 2018</p>
+          <ul class="uk-list uk-list-bullet">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h3 class="uk-heading-bullet text-white uk-text-center">Front-End Developer</h3>
+        <div class="uk-container">
+          <p class="text-white uk-text-lead">Freelance</p>
+          <p class="text-white uk-text-meta">Summer 2017</p>
+          <ul class="uk-list uk-list-bullet">
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-  <div id="experience">
+  <div id="projects" class="uk-container-expand" uk-parallax="bgy: -200">
     <br>
-    <h1>EXPERIENCE GOES HERE</h1>
-    <br>
-    <br>
+    <h1 class="uk-heading-primary text-white uk-text-center uk-margin-large-bottom">PROJECTS</h1>
   </div>
+
+  <div id="interests" class="uk-container-expand">
+    <br>
+    <h1 class="uk-heading-primary text-white uk-text-center uk-margin-large-bottom">INTERESTS</h1>
+  </div>
+
 </body>

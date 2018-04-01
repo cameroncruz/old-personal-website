@@ -1,5 +1,9 @@
+em {
+  color: #7D688E;
+}
+
 .uk-navbar-container {
-  width: 40vw;
+  width: 40em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -11,32 +15,53 @@
 }
 
 #bio {
-  background-image: url("img/bg/golden_gate.jpeg");
+  background-image: url("img/bg/golden_gate.jpg");
   background-size: cover;
   width: 100vw;
   height: 100vh;
 }
 
 #portrait-pic {
-  width: 8vw;
-  height: 8vw;
+  width: 10em;
+  height: 10em;
   border-radius: 50%;
   border: 5px solid #fff;
 }
 
 #experience {
   background-color: #4C373C;
+  width: 100vw;
+  height: 100vh;
+}
+
+#projects {
+  background-image: url("img/bg/coffee_computer.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+#interests {
+
 }
 
 .text-white {
   color: #fff;
 }
 
-.float-bottom {
-  bottom: 4em;
+.text-rust {
+  color: #DB5A42;
+}
+
+#arrow-bottom {
+  bottom: 3em;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%)
+}
+
+#arrow-bottom span {
+  position: relative;
+  left: -50%;
 }
 
 .Iam {
