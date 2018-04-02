@@ -10,4 +10,6 @@ window.onload = function() {
   Array.from(document.getElementsByClassName('cpy-clipboard')).forEach(function(element) {
       element.addEventListener('click', setTooltip);
     });
+
+  document.getElementById('loading').classList.add('loading-fade');
 };
